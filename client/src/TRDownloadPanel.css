@@ -1,0 +1,150 @@
+
+/* =========================================
+   SMARTCAMPUS - DOWNLOAD MY TR PANEL
+   Premium Glassmorphism Design
+========================================= */
+
+.tr-download-panel {
+  width: 100%;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 32px;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, #ffffff, #f0f5ff);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(30, 64, 175, 0.10);
+  transition: all 0.3s ease;
+}
+
+.tr-download-panel:hover {
+  box-shadow: 0 16px 40px rgba(30, 64, 175, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Heading */
+
+.tr-download-panel h2 {
+  margin: 0 0 10px;
+  color: #173b75;
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: 0.3px;
+}
+
+.tr-download-panel > p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Form */
+
+.tr-download-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Labels */
+
+.tr-download-panel label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 650;
+  margin-top: 9px;
+}
+
+/* Input Fields */
+
+.tr-download-panel input {
+  width: 100%;
+  padding: 13px 15px;
+  box-sizing: border-box;
+  border: 1px solid #d5dfef;
+  border-radius: 11px;
+  outline: none;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.tr-download-panel input::placeholder {
+  color: #a0aec0;
+}
+
+.tr-download-panel input:focus {
+  border-color: #3978e8;
+  box-shadow: 0 0 0 4px rgba(57, 120, 232, 0.12);
+  background: #ffffff;
+}
+
+/* Download Button */
+
+.tr-download-panel .primary-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #1746b5);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.23);
+  transition: all 0.3s ease;
+}
+
+.tr-download-panel .primary-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1746b5, #12358b);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.30);
+}
+
+.tr-download-panel .primary-btn:active {
+  transform: scale(0.98);
+}
+
+.tr-download-panel .primary-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Success / Error Message */
+
+.tr-download-panel form p[role="status"] {
+  margin: 12px 0 0;
+  padding: 12px 15px;
+  border-radius: 9px;
+  background: #e9f9ef;
+  border: 1px solid #b8ebca;
+  color: #168044;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .tr-download-panel {
+    padding: 22px 17px;
+    margin: 15px auto;
+    border-radius: 15px;
+  }
+
+  .tr-download-panel h2 {
+    font-size: 21px;
+  }
+
+  .tr-download-panel input {
+    padding: 12px;
+  }
+
+  .tr-download-panel .primary-btn {
+    padding: 13px;
+  }
+}

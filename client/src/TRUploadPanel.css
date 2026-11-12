@@ -1,0 +1,186 @@
+
+/* ==========================================
+   SMARTCAMPUS - TR UPLOAD PORTAL
+   Premium Professional Design
+========================================== */
+
+.content-card:has(#tr-session) {
+  width: 100%;
+  max-width: 1050px;
+  margin: 25px auto;
+  padding: 35px;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, #ffffff, #f3f6ff);
+  border: 1px solid #e1e8f5;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(25, 48, 95, 0.10);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Decorative Line */
+.content-card:has(#tr-session)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #18377e, #4779e8, #8ba9ff);
+}
+
+/* Heading */
+.content-card:has(#tr-session) h2 {
+  color: #183575;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 10px;
+  letter-spacing: -0.6px;
+}
+
+/* Description */
+.content-card:has(#tr-session) > p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* Form */
+.content-card:has(#tr-session) form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Labels */
+.content-card:has(#tr-session) form label {
+  color: #263b65;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+/* Text Input and Select */
+.content-card:has(#tr-session) form input[type="text"],
+.content-card:has(#tr-session) form select {
+  width: 100%;
+  min-height: 49px;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border: 1px solid #d7e0ef;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #26344f;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+/* Focus */
+.content-card:has(#tr-session) form input:focus,
+.content-card:has(#tr-session) form select:focus {
+  border-color: #3565d4;
+  box-shadow: 0 0 0 4px rgba(53, 101, 212, 0.10);
+}
+
+/* File Upload */
+.content-card:has(#tr-session) form input[type="file"] {
+  width: 100%;
+  min-height: 55px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px dashed #a8bce5;
+  border-radius: 13px;
+  background: #f7f9ff;
+  color: #475569;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.content-card:has(#tr-session) form input[type="file"]:hover {
+  border-color: #315bc2;
+  background: #edf3ff;
+}
+
+/* Information Text */
+.content-card:has(#tr-session) form p {
+  margin: 3px 0 12px;
+  padding: 13px 15px;
+  border-left: 4px solid #4778df;
+  border-radius: 8px;
+  background: #edf3ff;
+  color: #40577f;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Upload Button */
+.content-card:has(#tr-session) form button {
+  width: fit-content;
+  min-width: 170px;
+  margin-top: 12px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #19377e, #416fe0);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 750;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 7px 17px rgba(30, 64, 150, 0.22);
+  transition: all 0.25s ease;
+}
+
+.content-card:has(#tr-session) form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 11px 22px rgba(30, 64, 150, 0.30);
+}
+
+.content-card:has(#tr-session) form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success / Error Message */
+.content-card:has(#tr-session) > p[role="status"] {
+  margin-top: 22px;
+  padding: 14px 17px;
+  border-radius: 11px;
+  background: #e9f8ef;
+  border: 1px solid #b9e8c9;
+  color: #176b39;
+  font-size: 14px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-card:has(#tr-session) {
+    padding: 23px 18px;
+    margin: 15px auto;
+  }
+
+  .content-card:has(#tr-session) h2 {
+    font-size: 23px;
+  }
+
+  .content-card:has(#tr-session) form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-card:has(#tr-session) {
+    padding: 19px 14px;
+    border-radius: 15px;
+  }
+
+  .content-card:has(#tr-session) form label {
+    font-size: 13px;
+  }
+}
