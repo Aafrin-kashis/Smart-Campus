@@ -5,7 +5,7 @@ import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 import "./PdfSignaturePanel.css";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const SIGNER_ROLES = [
   "Tabulator",
   "ExaminationController",
